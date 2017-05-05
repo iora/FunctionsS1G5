@@ -6,9 +6,19 @@
 *	Recommended: add description of your code.
 */
 
-int getSum( int myArray[] );
+int getSum( int myArray[] )
+{ 
+int i;
+int getSum=0;
+for (i=0;i<500;i++)
+{
+	getSum +=myArray[i];
+}
 
-int getSumOfSquares( int myArray[] );
+return getSum;
+}
+
+double getSumOfSquares( int myArray[] )
 
 void printAsChars( int myArray[] );
 
@@ -27,6 +37,10 @@ int main( void ) {
 	int row[500];
 	for (int i = 0; i < 500; i++)
 		row[i] = i;
+	
+	int sum = getSum( row );
+	printf("%i",sum);
+
 
 	return 1;
 
