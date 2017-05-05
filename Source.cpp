@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <iostream>
 
 /*	
 *	Please define your functions after main().
@@ -14,7 +15,17 @@ void printAsChars( int myArray[] );
 
 double getAverage( int myArray[] );
 
-int subtractAllValues( int myArray[] );
+int subtractAllValues( int myArray[] ) {
+
+	for ( int i = 0; i < 500; i++ ) {
+
+		myArray[ i ] = myArray[ i ] - 5;
+
+	}
+
+	return 0;
+	
+};
 
 float invertAllValues( int myArray[] );
 
@@ -28,11 +39,11 @@ int main( void ) {
 	for (int i = 0; i < 500; i++)
 		row[i] = i;
 
+    subtractAllValues( row );
+
 	return 1;
 
 }
-
-
 
 
 void printGroupMemberNames() {
@@ -40,4 +51,3 @@ void printGroupMemberNames() {
 	printf("Ashyr Mamedov\nErkin Rozyyev\nHeng Ly\nSirimony Heng\nSoheng Pecheng\n");
 
 }
-
