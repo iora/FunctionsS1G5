@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <iostream>
+#include <iostream>
 
 /*	
 *	Please define your functions after main().
@@ -39,7 +39,19 @@ void printAsChars( int myArray[] )
 		printf("%c\n",myArray[c]);
 }
 
-double getAverage( int myArray[] );
+double getAverage( int myArray[] ) {
+
+	double avg = 0;
+
+	for ( int i = 0; i < 500; i++ ) {
+
+		avg += myArray[ i ];
+
+	}
+
+	return ( avg / 500.0 );
+
+};
 
 int subtractAllValues( int myArray[] ) {
 
@@ -53,7 +65,19 @@ int subtractAllValues( int myArray[] ) {
 	
 };
 
-float invertAllValues( int myArray[] );
+float invertAllValues( int myArray[] ) {
+
+	float invertedArr[ 500 ];
+
+	for ( int i = 0; i < 500; i++ ) {
+
+		invertedArr[ i ] = 1 / myArray[ i ];
+
+	}
+
+	return 0;
+
+}
 
 void printGroupMemberNames();
 
@@ -71,6 +95,12 @@ int main( void ) {
 	subtractAllValues( row );
 
 	double sumSquare = getSumOfSquares(row);
+
+	invertAllValues ( row );
+
+	double avg = getAverage ( row );
+	
+	std::cout << avg;
 
 	return 1;
 
