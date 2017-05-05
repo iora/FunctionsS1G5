@@ -6,15 +6,22 @@
 *	Recommended: add description of your code.
 */
 
-int getSum(int myArray[]);
-int getSumOfSquares(int myArray[]);
-void printAsChars(int myArray[]);
-double getAverage(int myArray[]);
-int subtractAllValues(int myArray[]);
-float invertAllValues(int myArray[] );
+int getSum( int myArray[] );
+
+int getSumOfSquares( int myArray[] );
+
+void printAsChars( int myArray[] );
+
+double getAverage( int myArray[] );
+
+int subtractAllValues( int myArray[] );
+
+float invertAllValues( int myArray[] );
+
 void printGroupMemberNames();
 
-int main(void) {
+int main( void ) {
+
 	printGroupMemberNames();
 
 	int row[500];
@@ -22,13 +29,15 @@ int main(void) {
 		row[i] = i;
 
 	return 1;
+
 }
 
 
 
 
 void printGroupMemberNames() {
-	printf("James Bond\n Brad Pitt/n");
+
+	printf("Ashyr Mamedov\nErkin Rozyyev\nHeng Ly\nSirimony Heng\nSoheng Pecheng\n");
 
 }
 
