@@ -9,14 +9,15 @@
 
 int getSum( int myArray[] )
 { 
-int i;
-int getSum=0;
-for (i=0;i<500;i++)
-{
-	getSum +=myArray[i];
-}
+	int i, getSum = 0;
 
-return getSum;
+	for (i=0;i<500;i++)
+
+	{
+		getSum +=myArray[i];
+	}
+
+	return getSum;
 }
 
 double getSumOfSquares( int myArray[] )
