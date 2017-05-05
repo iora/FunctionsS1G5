@@ -24,9 +24,10 @@ double getSumOfSquares(int myArray[])
 
 {
 	double sum = 0;
-	for (int i = 0; i < 500; i++)
+	for (int i = 0; i < 500; i++) {
 		myArray[i] = myArray[i] * myArray[i];
 		sum = sum + myArray[i];
+	}
 
 	return sum;
 }
@@ -65,13 +66,11 @@ int main( void ) {
 		row[i] = i;
 	
 	int sum = getSum( row );
-	printf("%i",sum);
+
 	printAsChars( row );
 	subtractAllValues( row );
 
 	double sumSquare = getSumOfSquares(row);
-
-	std::cout << sumSquare << '\n';
 
 	return 1;
 
