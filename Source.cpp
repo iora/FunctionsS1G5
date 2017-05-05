@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <iostream>
+//#include <iostream>
 
 /*	
 *	Please define your functions after main().
@@ -58,8 +58,7 @@ int main( void ) {
 	int sum = getSum( row );
 	printf("%i",sum);
 	printAsChars( row );
-
-    subtractAllValues( row );
+	subtractAllValues( row );
 
 	return 1;
 
