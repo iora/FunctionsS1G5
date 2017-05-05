@@ -49,7 +49,7 @@ double getAverage( int myArray[] ) {
 
 	}
 
-	//return
+	//return//
 
 	return ( avg / 500.0 );
 
