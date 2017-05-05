@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <iostream>
+//#include <iostream>
 
 /*	
 *	Please define your functions after main().
@@ -30,7 +30,13 @@ double getSumOfSquares(int myArray[])
 
 	return sum;
 }
-void printAsChars( int myArray[] );
+
+void printAsChars( int myArray[] )
+{	
+	int c;
+	for (c=0;c<500;c++)
+		printf("%c\n",myArray[c]);
+}
 
 double getAverage( int myArray[] );
 
@@ -60,9 +66,8 @@ int main( void ) {
 	
 	int sum = getSum( row );
 	printf("%i",sum);
-
-
-    subtractAllValues( row );
+	printAsChars( row );
+	subtractAllValues( row );
 
 	double sumSquare = getSumOfSquares(row);
 
