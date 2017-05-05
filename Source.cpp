@@ -18,9 +18,14 @@ for (i=0;i<500;i++)
 return getSum;
 }
 
-double getSumOfSquares( int myArray[] )
+double getSumOfSquares( int myArray[] );
 
-void printAsChars( int myArray[] );
+void printAsChars( int myArray[] )
+{	
+	int c;
+	for (c=0;c<500;c++)
+		printf("%c\n",myArray[c]);
+}
 
 double getAverage( int myArray[] );
 
@@ -40,7 +45,7 @@ int main( void ) {
 	
 	int sum = getSum( row );
 	printf("%i",sum);
-
+	printAsChars( row );
 
 	return 1;
 
